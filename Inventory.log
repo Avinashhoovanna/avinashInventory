@@ -1,0 +1,200 @@
+"2020-07-24 22:44:21 - No active profile set, falling back to default profiles: default
+""2020-07-24 22:44:22 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+""2020-07-24 22:44:22 - Finished Spring Data repository scanning in 21ms. Found 2 JPA repository interfaces.
+""2020-07-24 22:44:22 - BeanFactory id=6aee25e8-eec7-342b-b3dc-a2b27adfc2f7
+""2020-07-24 22:44:22 - Bean 'com.inventory.restclients.SalesClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-07-24 22:44:22 - Tomcat initialized with port(s): 8081 (http)
+""2020-07-24 22:44:22 - Starting service [Tomcat]
+""2020-07-24 22:44:22 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+""2020-07-24 22:44:23 - Initializing Spring embedded WebApplicationContext
+""2020-07-24 22:44:23 - Root WebApplicationContext: initialization completed in 1586 ms
+""2020-07-24 22:44:23 - Initializing ExecutorService 'applicationTaskExecutor'
+""2020-07-24 22:44:23 - HikariPool-6 - Starting...
+""2020-07-24 22:44:23 - HikariPool-6 - Start completed.
+""2020-07-24 22:44:23 - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2020-07-24 22:44:23 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+""2020-07-24 22:44:23 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2020-07-24 22:44:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2020-07-24 22:44:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2020-07-24 22:44:23 - LiveReload server is running on port 35729
+""2020-07-24 22:44:23 - Triggering deferred initialization of Spring Data repositories…
+""2020-07-24 22:44:23 - Spring Data repositories initialized!
+""2020-07-24 22:44:23 - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2020-07-24 22:44:23 - No URLs will be polled as dynamic configuration sources.
+""2020-07-24 22:44:23 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-07-24 22:44:23 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@242d4540, org.springframework.security.web.context.SecurityContextPersistenceFilter@6eb492d4, org.springframework.security.web.header.HeaderWriterFilter@52cd44d9, org.springframework.security.web.authentication.logout.LogoutFilter@73a4267f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1f893a7b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e1c5bb3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36cf3d25, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@284b0821, org.springframework.security.web.session.SessionManagementFilter@59bac6ca, org.springframework.security.web.access.ExceptionTranslationFilter@2fe9f42d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bea4ed4]
+""2020-07-24 22:44:23 - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+""2020-07-24 22:44:23 - Setting initial instance status as: STARTING
+""2020-07-24 22:44:23 - Initializing Eureka in region us-east-1
+""2020-07-24 22:44:23 - Using JSON encoding codec LegacyJacksonJson
+""2020-07-24 22:44:23 - Using JSON decoding codec LegacyJacksonJson
+""2020-07-24 22:44:23 - Using XML encoding codec XStreamXml
+""2020-07-24 22:44:23 - Using XML decoding codec XStreamXml
+""2020-07-24 22:44:24 - Resolving eureka endpoints via configuration
+""2020-07-24 22:44:24 - Disable delta property : false
+""2020-07-24 22:44:24 - Single vip registry refresh property : null
+""2020-07-24 22:44:24 - Force full registry fetch : false
+""2020-07-24 22:44:24 - Application is null : false
+""2020-07-24 22:44:24 - Registered Applications size is zero : true
+""2020-07-24 22:44:24 - Application version is -1: true
+""2020-07-24 22:44:24 - Getting all instance registry info from the eureka server
+""2020-07-24 22:44:24 - The response status is 200
+""2020-07-24 22:44:24 - Starting heartbeat executor: renew interval is: 30
+""2020-07-24 22:44:24 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+""2020-07-24 22:44:24 - Discovery Client initialized at timestamp 1595610864203 with initial instances count: 2
+""2020-07-24 22:44:24 - Registering application INVENTORY-SERVICE with eureka with status UP
+""2020-07-24 22:44:24 - Saw local status change event StatusChangeEvent [timestamp=1595610864206, current=UP, previous=STARTING]
+""2020-07-24 22:44:24 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081: registering service...
+""2020-07-24 22:44:24 - Tomcat started on port(s): 8081 (http) with context path ''
+""2020-07-24 22:44:24 - Updating port to 8081
+""2020-07-24 22:44:24 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081 - registration status: 204
+""2020-07-24 22:44:24 - Context refreshed
+""2020-07-24 22:44:24 - Found 1 custom documentation plugin(s)
+""2020-07-24 22:44:24 - Scanning for api listing references
+""2020-07-24 22:44:24 - Triggering deferred initialization of Spring Data repositories…
+""2020-07-24 22:44:24 - Spring Data repositories initialized!
+""2020-07-24 22:44:24 - Started InventoryServiceApplication in 3.114 seconds (JVM running for 441.6)
+""2020-07-24 22:44:24 - Condition evaluation unchanged
+""2020-07-24 22:44:56 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2020-07-24 22:44:56 - Initializing Servlet 'dispatcherServlet'
+""2020-07-24 22:44:56 - Completed initialization in 12 ms
+""2020-07-24 22:44:56 - Inside addInventory method
+""2020-07-24 22:46:00 - Unregistering application INVENTORY-SERVICE with eureka with status DOWN
+""2020-07-24 22:46:00 - Saw local status change event StatusChangeEvent [timestamp=1595610960018, current=DOWN, previous=UP]
+""2020-07-24 22:46:00 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081: registering service...
+""2020-07-24 22:46:00 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081 - registration status: 204
+""2020-07-24 22:46:00 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2020-07-24 22:46:00 - Shutting down ExecutorService 'applicationTaskExecutor'
+""2020-07-24 22:46:00 - HikariPool-6 - Shutdown initiated...
+""2020-07-24 22:46:00 - HikariPool-6 - Shutdown completed.
+""2020-07-24 22:46:00 - Shutting down DiscoveryClient ...
+""2020-07-24 22:46:03 - Unregistering ...
+""2020-07-24 22:46:03 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081 - deregister  status: 200
+""2020-07-24 22:46:03 - Completed shut down of DiscoveryClient
+""2020-07-24 22:46:03 - No active profile set, falling back to default profiles: default
+""2020-07-24 22:46:04 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+""2020-07-24 22:46:04 - Finished Spring Data repository scanning in 16ms. Found 2 JPA repository interfaces.
+""2020-07-24 22:46:04 - BeanFactory id=6aee25e8-eec7-342b-b3dc-a2b27adfc2f7
+""2020-07-24 22:46:04 - Bean 'com.inventory.restclients.SalesClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-07-24 22:46:04 - Tomcat initialized with port(s): 8081 (http)
+""2020-07-24 22:46:04 - Starting service [Tomcat]
+""2020-07-24 22:46:04 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+""2020-07-24 22:46:04 - Initializing Spring embedded WebApplicationContext
+""2020-07-24 22:46:04 - Root WebApplicationContext: initialization completed in 1442 ms
+""2020-07-24 22:46:05 - Initializing ExecutorService 'applicationTaskExecutor'
+""2020-07-24 22:46:05 - HikariPool-7 - Starting...
+""2020-07-24 22:46:05 - HikariPool-7 - Start completed.
+""2020-07-24 22:46:05 - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2020-07-24 22:46:05 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+""2020-07-24 22:46:05 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2020-07-24 22:46:05 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2020-07-24 22:46:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2020-07-24 22:46:05 - LiveReload server is running on port 35729
+""2020-07-24 22:46:05 - Triggering deferred initialization of Spring Data repositories…
+""2020-07-24 22:46:05 - Spring Data repositories initialized!
+""2020-07-24 22:46:05 - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2020-07-24 22:46:05 - No URLs will be polled as dynamic configuration sources.
+""2020-07-24 22:46:05 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-07-24 22:46:05 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56d4783d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d1573f0, org.springframework.security.web.header.HeaderWriterFilter@49cbc0ae, org.springframework.security.web.authentication.logout.LogoutFilter@40240bca, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@45829191, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@632cc1ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74f5a395, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69662fc2, org.springframework.security.web.session.SessionManagementFilter@42ed83f, org.springframework.security.web.access.ExceptionTranslationFilter@3bf6b824, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4095a7f0]
+""2020-07-24 22:46:05 - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+""2020-07-24 22:46:05 - Setting initial instance status as: STARTING
+""2020-07-24 22:46:05 - Initializing Eureka in region us-east-1
+""2020-07-24 22:46:05 - Using JSON encoding codec LegacyJacksonJson
+""2020-07-24 22:46:05 - Using JSON decoding codec LegacyJacksonJson
+""2020-07-24 22:46:05 - Using XML encoding codec XStreamXml
+""2020-07-24 22:46:05 - Using XML decoding codec XStreamXml
+""2020-07-24 22:46:06 - Resolving eureka endpoints via configuration
+""2020-07-24 22:46:06 - Disable delta property : false
+""2020-07-24 22:46:06 - Single vip registry refresh property : null
+""2020-07-24 22:46:06 - Force full registry fetch : false
+""2020-07-24 22:46:06 - Application is null : false
+""2020-07-24 22:46:06 - Registered Applications size is zero : true
+""2020-07-24 22:46:06 - Application version is -1: true
+""2020-07-24 22:46:06 - Getting all instance registry info from the eureka server
+""2020-07-24 22:46:06 - The response status is 200
+""2020-07-24 22:46:06 - Starting heartbeat executor: renew interval is: 30
+""2020-07-24 22:46:06 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+""2020-07-24 22:46:06 - Discovery Client initialized at timestamp 1595610966117 with initial instances count: 2
+""2020-07-24 22:46:06 - Registering application INVENTORY-SERVICE with eureka with status UP
+""2020-07-24 22:46:06 - Saw local status change event StatusChangeEvent [timestamp=1595610966119, current=UP, previous=STARTING]
+""2020-07-24 22:46:06 - Tomcat started on port(s): 8081 (http) with context path ''
+""2020-07-24 22:46:06 - Updating port to 8081
+""2020-07-24 22:46:06 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081: registering service...
+""2020-07-24 22:46:06 - Context refreshed
+""2020-07-24 22:46:06 - Found 1 custom documentation plugin(s)
+""2020-07-24 22:46:06 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081 - registration status: 204
+""2020-07-24 22:46:06 - Scanning for api listing references
+""2020-07-24 22:46:06 - Triggering deferred initialization of Spring Data repositories…
+""2020-07-24 22:46:06 - Spring Data repositories initialized!
+""2020-07-24 22:46:06 - Started InventoryServiceApplication in 2.921 seconds (JVM running for 543.483)
+""2020-07-24 22:46:06 - Condition evaluation unchanged
+""2020-07-24 22:47:10 - Unregistering application INVENTORY-SERVICE with eureka with status DOWN
+""2020-07-24 22:47:10 - Saw local status change event StatusChangeEvent [timestamp=1595611030513, current=DOWN, previous=UP]
+""2020-07-24 22:47:10 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081: registering service...
+""2020-07-24 22:47:10 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081 - registration status: 204
+""2020-07-24 22:47:10 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2020-07-24 22:47:10 - Shutting down ExecutorService 'applicationTaskExecutor'
+""2020-07-24 22:47:10 - HikariPool-7 - Shutdown initiated...
+""2020-07-24 22:47:10 - HikariPool-7 - Shutdown completed.
+""2020-07-24 22:47:10 - Shutting down DiscoveryClient ...
+""2020-07-24 22:47:13 - Unregistering ...
+""2020-07-24 22:47:13 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081 - deregister  status: 200
+""2020-07-24 22:47:13 - Completed shut down of DiscoveryClient
+""2020-07-24 22:49:30 - No active profile set, falling back to default profiles: default
+""2020-07-24 22:49:31 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+""2020-07-24 22:49:31 - Finished Spring Data repository scanning in 37ms. Found 2 JPA repository interfaces.
+""2020-07-24 22:49:32 - BeanFactory id=6aee25e8-eec7-342b-b3dc-a2b27adfc2f7
+""2020-07-24 22:49:32 - Bean 'com.inventory.restclients.SalesClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2020-07-24 22:49:32 - Tomcat initialized with port(s): 8081 (http)
+""2020-07-24 22:49:32 - Starting service [Tomcat]
+""2020-07-24 22:49:32 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+""2020-07-24 22:49:32 - Initializing Spring embedded WebApplicationContext
+""2020-07-24 22:49:32 - Root WebApplicationContext: initialization completed in 1967 ms
+""2020-07-24 22:49:32 - Initializing ExecutorService 'applicationTaskExecutor'
+""2020-07-24 22:49:32 - HikariPool-9 - Starting...
+""2020-07-24 22:49:32 - HikariPool-9 - Start completed.
+""2020-07-24 22:49:32 - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2020-07-24 22:49:32 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+""2020-07-24 22:49:32 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2020-07-24 22:49:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2020-07-24 22:49:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2020-07-24 22:49:32 - LiveReload server is running on port 35729
+""2020-07-24 22:49:32 - Triggering deferred initialization of Spring Data repositories…
+""2020-07-24 22:49:33 - Spring Data repositories initialized!
+""2020-07-24 22:49:33 - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+""2020-07-24 22:49:33 - No URLs will be polled as dynamic configuration sources.
+""2020-07-24 22:49:33 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+""2020-07-24 22:49:33 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c41c660, org.springframework.security.web.context.SecurityContextPersistenceFilter@74b452b5, org.springframework.security.web.header.HeaderWriterFilter@15e06817, org.springframework.security.web.authentication.logout.LogoutFilter@1d1d456a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7b3f8e12, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77e224c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61d44afc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71c4d744, org.springframework.security.web.session.SessionManagementFilter@5a7e0d5b, org.springframework.security.web.access.ExceptionTranslationFilter@5cfbf5d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34111797]
+""2020-07-24 22:49:33 - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+""2020-07-24 22:49:33 - Setting initial instance status as: STARTING
+""2020-07-24 22:49:33 - Initializing Eureka in region us-east-1
+""2020-07-24 22:49:33 - Using JSON encoding codec LegacyJacksonJson
+""2020-07-24 22:49:33 - Using JSON decoding codec LegacyJacksonJson
+""2020-07-24 22:49:33 - Using XML encoding codec XStreamXml
+""2020-07-24 22:49:33 - Using XML decoding codec XStreamXml
+""2020-07-24 22:49:33 - Resolving eureka endpoints via configuration
+""2020-07-24 22:49:33 - Disable delta property : false
+""2020-07-24 22:49:33 - Single vip registry refresh property : null
+""2020-07-24 22:49:33 - Force full registry fetch : false
+""2020-07-24 22:49:33 - Application is null : false
+""2020-07-24 22:49:33 - Registered Applications size is zero : true
+""2020-07-24 22:49:33 - Application version is -1: true
+""2020-07-24 22:49:33 - Getting all instance registry info from the eureka server
+""2020-07-24 22:49:33 - The response status is 200
+""2020-07-24 22:49:33 - Starting heartbeat executor: renew interval is: 30
+""2020-07-24 22:49:33 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+""2020-07-24 22:49:33 - Discovery Client initialized at timestamp 1595611173930 with initial instances count: 2
+""2020-07-24 22:49:33 - Registering application INVENTORY-SERVICE with eureka with status UP
+""2020-07-24 22:49:33 - Saw local status change event StatusChangeEvent [timestamp=1595611173932, current=UP, previous=STARTING]
+""2020-07-24 22:49:33 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081: registering service...
+""2020-07-24 22:49:33 - Tomcat started on port(s): 8081 (http) with context path ''
+""2020-07-24 22:49:33 - Updating port to 8081
+""2020-07-24 22:49:33 - DiscoveryClient_INVENTORY-SERVICE/cogjava138.iiht.tech:inventory-service:8081 - registration status: 204
+""2020-07-24 22:49:33 - Context refreshed
+""2020-07-24 22:49:33 - Found 1 custom documentation plugin(s)
+""2020-07-24 22:49:33 - Scanning for api listing references
+""2020-07-24 22:49:34 - Triggering deferred initialization of Spring Data repositories…
+""2020-07-24 22:49:34 - Spring Data repositories initialized!
+""2020-07-24 22:49:34 - Started InventoryServiceApplication in 3.671 seconds (JVM running for 751.298)
+""2020-07-24 22:49:34 - Condition evaluation unchanged
+"
