@@ -64,8 +64,7 @@ public class InventoryService {
 	}
 
 	public Inventory getInventoryByName(String name) {
-		Inventory inventory = repository.findByName(name);
-		return inventory;
+		return repository.findByName(name);
 	}
 
 	public List<Inventory> getAllInventory() {
@@ -75,21 +74,19 @@ public class InventoryService {
 
 	@Transactional
 	public int updateInventoryForSales(String name, int units, String availability) {
-		int result = repository.updateInventoryForSales(availability, units, name);
-		return result;
+		return repository.updateInventoryForSales(availability, units, name);
+	
 	}
 
 	@Transactional
 	public int deleteInventoryByName(String name) {
-		int result = repository.deleteInventoryByName(name);
-		return result;
-
+		return repository.deleteInventoryByName(name);
 	}
 
 	@Transactional
 	public int deleteItemsByInventory(int inventoryId) {
-		int result = itemRepository.deleteItemsByInventory(inventoryId);
-		return result;
+		return  itemRepository.deleteItemsByInventory(inventoryId);
+		
 
 	}
 
