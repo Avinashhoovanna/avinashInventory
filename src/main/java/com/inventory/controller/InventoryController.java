@@ -80,7 +80,7 @@ public class InventoryController {
 				returninventoryDTO.setAvailability(inventory.getAvailability());
 			}
 		} catch (Exception ex) {
-			throw new InventoryException("Inventory Not Found!!!!", HttpStatus.NOT_FOUND);
+			throw new InventoryException("Inventory Not Found!", HttpStatus.NOT_FOUND);
 		}
 		return returninventoryDTO;
 	}

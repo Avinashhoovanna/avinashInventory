@@ -17,10 +17,9 @@ public class InventoryDTO {
 		super();
 	}
 
-	public InventoryDTO(int id, String name, double price, String demand, String stock, int units, String availability,
+	public InventoryDTO(String name, double price, String demand, String stock, int units, String availability,
 			List<Item> items) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.price = price;
 		this.demand = demand;

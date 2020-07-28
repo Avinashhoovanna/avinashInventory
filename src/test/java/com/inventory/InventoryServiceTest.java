@@ -34,14 +34,14 @@ public class InventoryServiceTest {
 	}
 
 	public Inventory getInventory() {
-		InventoryDTO inventoryDTO = new InventoryDTO(1, "Nokia", 15000.00, "high", "low", 10, "NO",
+		InventoryDTO inventoryDTO = new InventoryDTO("Nokia", 15000.00, "high", "low", 10, "NO",
 				new ArrayList<Item>());
 		Inventory inventory = getModelMapper().map(inventoryDTO, Inventory.class);
 		return inventory;
 	}
 
 	public InventoryDTO getInventoryDTO() {
-		InventoryDTO inventoryDTO = new InventoryDTO(1, "Nokia", 15000.00, "high", "low", 10, "NO",
+		InventoryDTO inventoryDTO = new InventoryDTO("Nokia", 15000.00, "high", "low", 10, "NO",
 				new ArrayList<Item>());
 		return inventoryDTO;
 	}

@@ -18,7 +18,6 @@ import com.inventory.dto.InventoryDTO;
 import com.inventory.dto.ReturnInventoryDTO;
 import com.inventory.exception.InventoryException;
 import com.inventory.model.Inventory;
-import com.inventory.model.Item;
 import com.inventory.restclients.SalesClient;
 import com.inventory.service.InventoryService;
 
@@ -41,14 +40,14 @@ public class InventoryControllerTest {
 	}
 
 	public InventoryDTO getInventoryDTO() {
-		InventoryDTO inventoryDTO = new InventoryDTO(1, "Nokia", 15000.00, "high", "low", 10, "NO",
-				new ArrayList<Item>());
+		InventoryDTO inventoryDTO = new InventoryDTO("Nokia", 15000.00, "high", "low", 10, "NO",
+				new ArrayList<>());
 		return inventoryDTO;
 	}
 
 	public Inventory getInventory() {
-		InventoryDTO inventoryDTO = new InventoryDTO(1, "Nokia", 15000.00, "high", "low", 10, "NO",
-				new ArrayList<Item>());
+		InventoryDTO inventoryDTO = new InventoryDTO("Nokia", 15000.00, "high", "low", 10, "NO",
+				new ArrayList<>());
 		Inventory inventory = getModelMapper().map(inventoryDTO, Inventory.class);
 		return inventory;
 	}
@@ -89,7 +88,6 @@ public class InventoryControllerTest {
 	@Test
 	public void deleteInventoryTest() {
 		when(service.getInventoryByName("Nokia")).thenReturn(getInventory());
-		when(service.deleteItemsByInventory(1)).thenReturn(1);
 		when(service.deleteInventoryByName("Nokia")).thenReturn(1);
 		String message = "Successfully deleted the Inventory......";
 		String result = inventoryController.deleteInventory("Nokia");

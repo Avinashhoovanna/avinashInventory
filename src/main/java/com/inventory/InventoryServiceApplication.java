@@ -29,19 +29,19 @@ public class InventoryServiceApplication {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
 				.apis(RequestHandlerSelectors.basePackage("com.inventory"))
-				.build();
-				//.apiInfo(apidetails());
+				.build()
+				.apiInfo(apidetails());
 	}
 	
-//	private ApiInfo apidetails() {
-//		return new ApiInfo("Inventory Service API",
-//				"API for Inventory Management", 
-//				"1.0", 
-//				"free to use",
-//				new Contact("Avinash", "http://localhost:8081/inventory", "a@test.com"),
-//				"API Licenese",
-//				"http://localhost:8081/inventory",
-//				Collections.emptyList());
-//	}
+	private ApiInfo apidetails() {
+		return new ApiInfo("Inventory Service API",
+				"API for Inventory Management", 
+				"1.0", 
+				"free to use",
+				new Contact("Avinash", "http://localhost:8081/inventory", "a@test.com"),
+				"API Licenese",
+				"http://localhost:8081/inventory",
+				Collections.emptyList());
+	}
 
 }
