@@ -42,7 +42,7 @@ public class InventoryController {
 	SalesClient salesClient;
 
 	private static final Logger log = LogManager.getLogger(InventoryController.class);
-	//
+
 	//method for adding Inventory along with Raw materials need for Inventory
 	@PostMapping("/addInventory")
 	@ApiOperation(value = "adding inventory..", notes = "Able to Add items to inventory..", response = String.class)
@@ -80,7 +80,7 @@ public class InventoryController {
 				returninventoryDTO.setAvailability(inventory.getAvailability());
 			}
 		} catch (Exception ex) {
-			throw new InventoryException("Inventory Not Found!", HttpStatus.NOT_FOUND);
+			throw new InventoryException("Not able to find Inventory!!!", HttpStatus.NOT_FOUND);
 		}
 		return returninventoryDTO;
 	}
@@ -131,7 +131,7 @@ public class InventoryController {
 			salesClient.postProduct(product);
 			message = "Inventory Available for SALE.......";
 		} catch (Exception ex) {
-			throw new InventoryException("Inventory Not Found!!!!", HttpStatus.NOT_FOUND);
+			throw new InventoryException("Not able to update Inventory!!!!", HttpStatus.NOT_FOUND);
 		}
 
 		return message;
@@ -152,7 +152,7 @@ public class InventoryController {
 				message = "Inventory Not Found...";
 			}
 		} catch (Exception ex) {
-			throw new InventoryException("Inventory Not Found!!!!", HttpStatus.NOT_FOUND);
+			throw new InventoryException("Not able to delete Inventory!!!!", HttpStatus.NOT_FOUND);
 		}
 
 		return message;

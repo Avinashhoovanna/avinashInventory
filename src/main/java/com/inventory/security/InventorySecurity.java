@@ -19,9 +19,8 @@ public class InventorySecurity extends WebSecurityConfigurerAdapter {
 	// survey -> USER
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.httpBasic().and().authorizeRequests().antMatchers("/surveys/**").hasRole("USER").antMatchers("/users/**")
-				.hasRole("USER").antMatchers("/**").hasRole("ADMIN").and().csrf().disable().headers().frameOptions()
-				.disable();
+		http.httpBasic().and().authorizeRequests().antMatchers("/dummy/**").hasRole("USER").antMatchers("/**")
+				.hasRole("ADMIN").and().csrf().disable().headers().frameOptions().disable();
 	}
 
 }
