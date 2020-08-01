@@ -40,17 +40,34 @@ public class InventoryServiceTest {
 		return new ModelMapper();
 	}
 
-	public Inventory getInventory() {
-		InventoryDTO inventoryDTO = new InventoryDTO("Nokia", 15000.00, "high", "low", 5, "NO",
-				new ArrayList<Item>());
-		Inventory inventory = getModelMapper().map(inventoryDTO, Inventory.class);
-		return inventory;
+	public List<Item> getItem() {
+		Item item = new Item();
+		item.setId(1);
+		item.setName("battery");
+		item.setPrice(2000.00);
+		item.setDescription("2000mah");
+		ArrayList<Item> list = new ArrayList<Item>();
+		list.add(item);
+		return list;
+
+	}
+	
+	public InventoryDTO getInventoryDTO() {
+		InventoryDTO inventoryDTO = new InventoryDTO();
+		inventoryDTO.setId(1);
+		inventoryDTO.setName("Nokia");
+		inventoryDTO.setPrice(15000.00);
+		inventoryDTO.setDemand("low");
+		inventoryDTO.setStock("high");
+		inventoryDTO.setUnits(10);
+		inventoryDTO.setAvailability("NO");
+		inventoryDTO.setItems(getItem());
+		return inventoryDTO;
 	}
 
-	public InventoryDTO getInventoryDTO() {
-		InventoryDTO inventoryDTO = new InventoryDTO("Nokia", 15000.00, "high", "low", 5, "NO",
-				new ArrayList<Item>());
-		return inventoryDTO;
+	public Inventory getInventory() {
+		Inventory inventory = getModelMapper().map(getInventoryDTO(), Inventory.class);
+		return inventory;
 	}
 
 	@Test

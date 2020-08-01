@@ -13,22 +13,6 @@ public class InventoryDTO {
 	private String availability;
 	private List<Item> items;
 
-	public InventoryDTO() {
-		super();
-	}
-
-	public InventoryDTO(String name, double price, String demand, String stock, int units, String availability,
-			List<Item> items) {
-		super();
-		this.name = name;
-		this.price = price;
-		this.demand = demand;
-		this.stock = stock;
-		this.units = units;
-		this.availability = availability;
-		this.items = items;
-	}
-
 	public int getId() {
 		return id;
 	}

@@ -1,5 +1,5 @@
 package com.inventory;
-import static org.junit.Assert.assertNotEquals;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 import java.util.ArrayList;
@@ -49,17 +49,24 @@ public class InventoryControllerTest {
 		ArrayList<Item> list = new ArrayList<Item>();
 		list.add(item);
 		return list;
-		
+
 	}
+
 	public InventoryDTO getInventoryDTO() {
-		
-		InventoryDTO inventoryDTO = new InventoryDTO("Nokia", 15000.00, "high", "low", 10, "NO", getItem());
+		InventoryDTO inventoryDTO = new InventoryDTO();
+		inventoryDTO.setId(1);
+		inventoryDTO.setName("Nokia");
+		inventoryDTO.setPrice(15000.00);
+		inventoryDTO.setDemand("low");
+		inventoryDTO.setStock("high");
+		inventoryDTO.setUnits(10);
+		inventoryDTO.setAvailability("NO");
+		inventoryDTO.setItems(getItem());
 		return inventoryDTO;
 	}
 
 	public Inventory getInventory() {
-		InventoryDTO inventoryDTO = new InventoryDTO("Nokia", 15000.00, "high", "low", 10, "NO", getItem());
-		Inventory inventory = getModelMapper().map(inventoryDTO, Inventory.class);
+		Inventory inventory = getModelMapper().map(getInventoryDTO(), Inventory.class);
 		return inventory;
 	}
 
@@ -68,14 +75,6 @@ public class InventoryControllerTest {
 		String message = "We are Having trouble in Adding Inventory try after sometime...";
 		String result = inventoryController.addInventory(getInventoryDTO());
 		assertEquals(message, result);
-	}
-	
-	@Test
-	public void addInventorySuccessTest() {
-		String message = "Successfully added the Inventory";
-		//when(service.addInventory(getInventoryDTO())).thenReturn(true);
-		String result = inventoryController.addInventory(getInventoryDTO());
-		assertNotEquals(message, result);
 	}
 
 	@Test
@@ -109,7 +108,7 @@ public class InventoryControllerTest {
 		String result = inventoryController.deleteInventory("Nokia");
 		assertEquals(message, result);
 	}
-	
+
 	@Test
 	public void deleteInventoryNotExistsTest() {
 		when(service.getInventoryByName("Nokia")).thenReturn(null);
